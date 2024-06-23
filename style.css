@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    padding:  5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.nav-logo{
+    margin-left: 3%;
+}
+.nav-link{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.nav-link li{
+    list-style: none;
+    margin: 0 10px;
+    font-size: larger;
+}
+.nav .fa-bars{
+    display: none;
+}
+.first_image{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 70px;
+}
+.image_first {
+    width: 100%;
+    height: 150%;
+    object-fit: cover; 
+}
+.mobile_view{
+    display: none;
+}
+
+.rent_property{
+    position: absolute;
+    top: 30%;
+    background-color: #fff;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 6%;
+    width: 38%;
+    border-radius: 0px 50px 50px 0px;
+}
+.rent_head{
+    font-size: 50px;
+    font-weight: bolder;
+    color: black;
+    padding-bottom: 20px;
+   
+}
+.para_head{
+    font-size: 22px;
+    color: black;
+    padding-bottom: 15px; 
+}
+
+.future {
+    display: flex;
+    padding: 20px; 
+    margin-top: 30%;
+    margin-left: 8%; 
+}
+
+.future_img {
+    max-width: 50%;
+    height: auto;
+}
+
+.inner_future {
+    max-width: 55%;
+    padding: 20px 40px 15px 70px;
+    background-color: #eae6e6;
+    border-radius: 0px 50px 50px 0px;
+    align-items: center;
+}
+
+.inner_future h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding-top: 25%;
+}
+.inner_future p{
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding-top: 5%;
+}
+
+.aliquam{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 8%;
+}
+.aliquam h1{
+    font-size: 50px;
+}
+.aliquam p{
+    font-size: 25px;
+}
+.features{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 5%;
+    gap: 20px;
+    margin-left: 5%;
+    
+}
+.wifi img{
+    width: 56px;
+    height: 56px;
+}
+.move_in img{
+    width: 56px;
+    height: 56px;
+}
+.features .boxing{
+    background-color:  #e6edf8;
+    border-radius: 25px;
+    padding-left: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.features h3{
+    padding-top: 10%;
+    font-size: 25px;
+}
+.features p{
+    font-size: 15px;
+    padding-top: 5%;
+}
+.choose{
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 5%;
+    text-align: center;
+}
+.location{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-left: 8%;
+    gap: 2%;
+}
+.country{
+    margin-top: 30%;
+}
+.country h3{
+    font-size: 23px;
+    text-align: center;
+}
+.location .Kingston{
+    margin-top: 18%;
+}
+.view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.btn-view{
+    padding: 10px 45px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(26, 64, 64);
+    border-radius: 50px;
+    border-top: none;
+}
+
+
+/* Tablet View */
+@media (min-width: 600px) and (max-width: 899px) {
+    .nav{
+        height: 100px;
+    }
+    .nav-link{
+        font-size: 2rem;
+    }
+    .rent_property{
+        top: 20%;
+        width: 50%;
+        text-align: center;
+        padding: 10px;
+        
+    }
+    .future{
+        margin-top: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .future_img{
+        height: 100px;
+        width: 80%;
+    }
+    .inner_future{
+        margin-top: 39%;
+        min-width: 90%;
+        border-radius: 40px 0px 0px 40px;
+    }
+    .para_head{
+        font-size: 2rem;
+    }
+    .features{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 5%;
+        gap: 20px;
+        margin-left: 5%;
+        
+    }
+    .location{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-left: 5%;
+    }
+    .location img{
+        min-width: 300px;
+       }
+       .location .Kingston{
+        margin-top: 20%;
+    }
+    .country h3{
+        font-size: 2rem;
+    }
+
+       .btn-view {
+        width: 30%;
+        padding: 30px;
+        font-size: 27px;
+    }
+}
+
+
+
+/* Mobile View */
+@media (max-width: 599px) {
+    .nav{
+        max-width: 100%;
+        height: 80px;
+    }
+    .nav-logo{
+        display: block;
+        width: 40%;
+        padding-right: 10%;
+        padding-top: 38px;
+       padding-top: 2%;
+        
+    }
+    .nav .fa-bars{
+        display: flex;
+        font-size: 2rem;
+        padding-top: 20px;
+        padding-left: 20%;
+   
+    }
+    .nav-link li{
+        display: none;
+    }
+    
+    .image_first {
+        display: none;
+    }
+    .mobile_view{
+        display: grid;
+        
+    }
+   .rent_property{
+    top:3%;
+    font-size: 20px;
+    width: 50vh;
+    height: 35vh;
+    padding-left: 9%;
+    padding-top: 5%;
+    
+   }
+  .rent_head{
+    font-size: 38px;
+   } 
+   
+   .para_head{
+    font-size: 20px;
+   }
+   .future{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;   
+   }
+  
+   .inner_future {
+    margin-top: 43%;
+    max-height: 500px;
+    min-width: 420px;
+    border-radius: 0px 0px 30px 30px;
+    margin-left: 2%;
+    text-align: center;
+    padding-left: 10px;
+   }
+   .inner_future h1{
+    font-size: 30px;
+    padding-top: 5px;
+    
+    
+   }
+   .inner_future p{
+    padding: 12px;
+    font-size:15px;
+    font-weight: bold;
+   }
+   
+   .future_img{
+    height: 100px;
+    margin-top: 250px;  
+   }
+   .future_img img{
+    margin-top: 10px;
+    max-height: 250px;
+    border-radius: 50px 50px 0px 0px;
+   }
+   .aliquam{
+    margin-top: 10%;
+   }
+   .aliquam h1{
+    font-size: 27px;
+   }
+   .aliquam p{
+    margin-top: 5%;
+    font-size: 20px;
+   }
+   .features{
+    display: flex;
+    flex-direction: column;
+   }
+   .choose{
+    font-size: 2rem;
+    margin-top: 16%;
+   }
+   .location{
+    display: flex;
+    flex-direction: column;
+   }
+   .location .country{
+    margin-top: 10%;
+   }
+   .location img{
+    min-width: 300px;
+   }
+   .view .btn-view{
+    padding: 10px;
+    font-size: 25px;
+   }
+ 
+    
+}
