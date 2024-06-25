@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    max-width: 100vw;
+    width: 100%;
+    height: 1500px;
+    margin: 0;
+    padding: 0;
+   
+}
 .nav{
     display: flex;
     justify-content: space-between;
@@ -25,6 +33,10 @@
     gap: 20px;
     align-items: center;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 .nav-link li{
     list-style: none;
     margin: 0 10px;
@@ -32,6 +44,11 @@
 }
 .nav .fa-bars{
     display: none;
+}
+.minicontainer{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
 }
 .first_image{
     width: 100%;
@@ -82,7 +99,9 @@
     max-width: 50%;
     height: auto;
 }
-
+.future_mobile{
+    display: none;
+}
 .inner_future {
     max-width: 55%;
     padding: 20px 40px 15px 70px;
@@ -152,16 +171,23 @@
     text-align: center;
 }
 .location{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    margin-left: 8%;
-    gap: 2%;
+    padding: 0 50px;
+   
 }
 .country{
+    width: 160px;
     margin-top: 30%;
+    padding: 10px;
+    
+}
+.country img{
+    width: 150px;
 }
 .country h3{
-    font-size: 23px;
+    font-size: 18px;
     text-align: center;
 }
 .location .Kingston{
@@ -247,123 +273,134 @@
 }
 
 
-
 /* Mobile View */
 @media (max-width: 599px) {
-    .nav{
+    body{
+height: 3000px;
+    }
+
+    .nav {
         max-width: 100%;
         height: 80px;
     }
-    .nav-logo{
+    .nav-logo {
         display: block;
         width: 40%;
         padding-right: 10%;
         padding-top: 38px;
-       padding-top: 2%;
-        
+        padding-top: 2%;
     }
-    .nav .fa-bars{
+    .nav .fa-bars {
         display: flex;
         font-size: 2rem;
         padding-top: 20px;
         padding-left: 20%;
-   
     }
-    .nav-link li{
+    .nav-link li {
         display: none;
     }
-    
     .image_first {
         display: none;
     }
-    .mobile_view{
+    .mobile_view {
         display: grid;
+    }
+    .rent_property {
+        top: 5%;
+        width: 93%;
+        padding-left: 9%;
+        padding-top: 5%; 
+        border-radius: 0px 30px 30px 0px;
+    }
+    .rent_head {
+        font-size: 38px;
+    } 
+    .para_head {
+        font-size: 20px;
+    }
+
+    .future {
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        padding: 0 10px; 
+        box-sizing: border-box;
+       
         
     }
-   .rent_property{
-    top:3%;
-    font-size: 20px;
-    width: 50vh;
-    height: 35vh;
-    padding-left: 9%;
-    padding-top: 5%;
-    
-   }
-  .rent_head{
-    font-size: 38px;
-   } 
-   
-   .para_head{
-    font-size: 20px;
-   }
-   .future{
-    display: flex;
-    flex-direction: column;
-    margin: 10px auto;   
-   }
-  
-   .inner_future {
-    margin-top: 43%;
-    max-height: 500px;
-    min-width: 420px;
-    border-radius: 0px 0px 30px 30px;
-    margin-left: 2%;
-    text-align: center;
-    padding-left: 10px;
-   }
-   .inner_future h1{
-    font-size: 30px;
-    padding-top: 5px;
-    
-    
-   }
-   .inner_future p{
-    padding: 12px;
-    font-size:15px;
-    font-weight: bold;
-   }
-   
-   .future_img{
-    height: 100px;
-    margin-top: 250px;  
-   }
-   .future_img img{
-    margin-top: 10px;
-    max-height: 250px;
-    border-radius: 50px 50px 0px 0px;
-   }
-   .aliquam{
-    margin-top: 10%;
-   }
-   .aliquam h1{
-    font-size: 27px;
-   }
-   .aliquam p{
-    margin-top: 5%;
-    font-size: 20px;
-   }
-   .features{
-    display: flex;
-    flex-direction: column;
-   }
-   .choose{
-    font-size: 2rem;
-    margin-top: 16%;
-   }
-   .location{
-    display: flex;
-    flex-direction: column;
-   }
-   .location .country{
-    margin-top: 10%;
-   }
-   .location img{
-    min-width: 300px;
-   }
-   .view .btn-view{
-    padding: 10px;
-    font-size: 25px;
-   }
- 
-    
+    .future_img {
+        max-width: 100%;
+        width: 100%;
+        height: 250px;
+    }
+    .future_desk{
+        display: none;
+    }
+    .future_mobile{
+        display: block;
+    }
+    .future_img img {
+        margin-top: 250px;
+        min-width: 100%;
+        height: 250px;
+        
+    }
+
+    .inner_future {
+        margin-top: 250px;
+        max-width: 100%;
+        border-radius: 0px 0px 30px 30px;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .inner_future h1 {
+        font-size: 30px;
+    }
+    .inner_future p {
+        padding: 12px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .aliquam {
+        margin-top: 10%;
+    }
+    .aliquam h1 {
+        font-size: 27px;
+    }
+    .aliquam p {
+        margin-top: 5%;
+        font-size: 20px;
+    }
+    .features {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .choose {
+        font-size: 2rem;
+        margin-top: 16%;
+    }
+    .location {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        width: 100%;
+    }
+    .location .country {
+        margin-top: 5%;
+        width: 100%;
+    }
+    .location img {
+        width: 100%;
+        height: 230px;
+    }
+    .location h3{
+        font-size: 30px;
+    }
+    .view .btn-view {
+        padding: 10px;
+        font-size: 25px;
+    }
 }
